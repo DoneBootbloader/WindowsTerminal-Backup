@@ -26,17 +26,22 @@
     "theme": "dark",
 
     "profiles":
-    {
+    {        
         "defaults":
         {
-            "acrylicOpacity": 0,
-            "fontFace": "Cascadia Code"
+            "startOnUserLogin": true,
+            "acrylicOpacity": 0.5,
+            "fontFace": "Cascadia Code",
+            "fontWeight": "normal",
+            "tabWidthMode": "compact"
+
+            //%USERPROFILE%
             // Put settings here that you want to apply to all profiles.
         },
         "list":
         [
             {
-                "backgroundImage": "C://Users//naive//Pictures//本机照片//GKD//Pixiv//68146011_p0.jpg",
+                "backgroundImage": "C://Users//Naive//Pictures//本机照片//GKD//Pixiv//68146011_p0.jpg",
                 "backgroundImageOpacity": 0.26,
                 "closeOnExit": true,
                 "colorScheme": "lovelace",
@@ -50,11 +55,13 @@
                 "name": "Windows PowerShell",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%",
+                "startingDirectory": ".",
                 "tabTitle": "Powershell",
                 "useAcrylic": true
             },
            {
+                "backgroundImage": "C:/Users/Naive/Pictures/Github/setu/pics_original/",
+                "backgroundImageOpacity": 0.3,
                 "closeOnExit": true,
                 "colorScheme": "lovelace",
                 "commandline": "cmd.exe",
@@ -67,7 +74,7 @@
                 "name": "cmd",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
-                "startingDirectory": "%USERPROFILE%",
+                "startingDirectory": ".",
                 "tabTitle": "cmd",
                 "useAcrylic": true
             },
@@ -78,7 +85,7 @@
                 "source": "Windows.Terminal.Azure"
             },
           {
-                "backgroundImage": "C://Users//fffff//Pictures//本机照片//GKD//Pixiv//68146011_p0.jpg",
+                "backgroundImage": "C:/Users/Naive/Pictures/Github/setu/pics_original/",
                 "backgroundImageOpacity": 0.3,
                 "closeOnExit": true,
                 "colorScheme": "lovelace",
@@ -93,11 +100,12 @@
                 "name": "Ubuntu",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "Ubuntu-20.04",
                 "useAcrylic": true
           },
             {
-                "backgroundImage": "C://wallpaper3.png",
+                "backgroundImage": "https://daydreamaq.com/img.php",
                 "backgroundImageOpacity": 0.4,
                 "closeOnExit": true,
                 "colorScheme": "lovelace",
@@ -110,11 +118,12 @@
                 "name": "Debian",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "Debian",
                 "useAcrylic": false
             },
             {
-                "backgroundImage": "C://wallpaper3.png",
+                "backgroundImage": "https://daydreamaq.com/img.php",
                 "backgroundImageOpacity": 0.4,
                 "closeOnExit": true,
                 "colorScheme": "lovelace",
@@ -128,6 +137,7 @@
                 "name": "Python",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "Python",
                 "useAcrylic": false
             },
@@ -144,6 +154,7 @@
                 "name": "kali",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "kali-linux",
                 "useAcrylic": true
             },
@@ -160,6 +171,7 @@
                 "name": "opensuse",
                 "padding": "0, 0, 0, 0",
                 "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%",
                 "tabTitle": "openSUSE-Leap-15-1",
                 "useAcrylic": true
             }
@@ -195,7 +207,7 @@
     "keybindings":
     [
         ///General Settings
-        { "command": { "action": "newTab", "index": 1 }, "keys": "ctrl+c" },
+        { "command": { "action": "newTab", "index": 1 }, "keys": "ctrl+plus" },
         { "command": "closePane", "keys": "ctrl+shift+w" },
         { "command": "paste", "keys": "ctrl+v" },
 
